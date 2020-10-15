@@ -1,0 +1,6 @@
+.idea/
+.DS_Store
+.env
+go.sum
+vendor
+.vscode/
