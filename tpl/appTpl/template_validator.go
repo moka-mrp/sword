@@ -5,8 +5,8 @@ const TplValidator  =`package testFunc
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/moka-mrp/xuanyuan/app/common/constants"
-	. "github.com/moka-mrp/xuanyuan/app/common/controllers"
+	"{{.ModuleName}}/app/common/constants"
+	. "{{.ModuleName}}/app/common/controllers"
 )
 
 
