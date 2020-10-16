@@ -19,6 +19,9 @@ func RegisterRoute(router *gin.Engine) {
 	//统一的中间件
 	router.Use(middleware.Cors(),middlewares.ServerRecovery(),middlewares.GenContextKit,gin.Logger())
 	//必备的路由
+	router.GET("/", func(context *gin.Context) {
+		context.String(200,utils.GetVersion())
+	})
 	router.GET("/ping", healthFunc.Ping) // 健康检查
     //v1接口路由
 	api := router.Group("/v1")
