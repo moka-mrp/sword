@@ -12,6 +12,7 @@ var newCmd = &cobra.Command{
 	Use:   "new",
 	Aliases: []string{"n"},
 	Short: "create new project",
+	//Args:cobra.MinimumNArgs(1), //至少要有 N 个位置参数，否则报错,当然也可以在内部判断
 	RunE: func(cmd *cobra.Command, args []string)error {
 		err:=server.RunNew(args)
 		if err!=nil{

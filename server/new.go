@@ -13,7 +13,7 @@ import (
 func RunNew(args []string) error {
 	//判断是否传递了项目名
 	if len(args) == 0 {
-		return errors.New("required project name")
+		return errors.New("requires at least 1 arg(s),required project name")
 	}
 	P.Name = args[0]
 
