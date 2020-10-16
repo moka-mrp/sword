@@ -9,6 +9,7 @@ import (
 	"{{.ModuleName}}/app/api/controller/healthFunc"
 	"{{.ModuleName}}/app/api/controller/testFunc"
 	"{{.ModuleName}}/app/common/middlewares"
+    "{{.ModuleName}}/app/common/utils"
 )
 
 //分布式定时任务模块的路由
