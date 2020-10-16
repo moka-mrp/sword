@@ -1,4 +1,4 @@
-package tpl
+package baseTpl
 
 
 
@@ -7,7 +7,6 @@ const  TplEnv = `# toml配置文件
 ### 全局配置信息
 Debug = true
 Env = "local"
-MYENV="white"
 
 ###日志配置信息
 [Log]
@@ -63,10 +62,18 @@ Host = "127.0.0.1"
 Port = 3306
 User = "root"
 Password = "root"
-Name = "gwp"
+Name = "test"
 
 ###Web服务配置相关信息
 [Api]
 Host = "0.0.0.0"
-Port = 8089
+Port = 9999
+
+
+
+
+
+
+
+
 `

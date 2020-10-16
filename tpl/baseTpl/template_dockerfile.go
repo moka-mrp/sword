@@ -1,4 +1,4 @@
-package tpl
+package baseTpl
 
 const TplDockerfile  = `# Base image
 FROM  shanbumin/golang:1.14-alpine3.11

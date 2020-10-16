@@ -1,4 +1,4 @@
-package tpl
+package baseTpl
 
 const TplBuild  =`#!/usr/bin/env bash
 #sam@2020-08-11 11:02:54

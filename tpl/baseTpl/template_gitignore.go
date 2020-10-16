@@ -1,4 +1,4 @@
-package tpl
+package baseTpl
 
 
 const  TplGitignore = `/.idea
