@@ -1,23 +1,56 @@
 package baseTpl
 
 
-const  TplReadme = `## Sword
-Sword是一套简单易用的可嗖哈型的Go语言业务框架，整体逻辑设计简洁，几乎参考PHP框架lumen设计而来。
+const  TplReadme = `## sword
+sword是一套简单易用的Go语言业务框架，整体逻辑设计简洁，支持HTTP服务、分布式调度和和脚本任务等常用业务场景模式。
+
+## Goals
+让PHPer更加容易切换角色成为Gopher。
+
+
+
 
 ## Quick start
 
-### Build
+### Requirements
+- Go version >= 1.13
+- Global environment configure (Linux/Mac)  
 
+`+"```"+`
+export  GOPROXY=https://goproxy.cn
+export  GO111MODULE=on
+`+"```"+`
 
-### Run
-` + "```" + `shell
-略
-` + "```" + `
+### Installation
+`+"```"+`shell
+go get github.com/moka-mrp/sword
+sword new sword-demo -p /tmp  -m moye #sword-demo为创建的项目名称, -p指明项目放置目录，未指明取当面目录,-m指明go mod模块名，未指明取项目名称
+`+"```"+`
+
+### Build & Run
+`+"```"+`shell
+cd /tmp/sword-demo
+go run main.go  api
+`+"```"+`
+
+### Test demo
+`+"```"+`
+curl "http://127.0.0.1:9999"
+`+"```"+`
 
 ## Documents
 
-- [项目核心包地址](https://github.com/moka-mrp/sword-core)
+- [项目脚手架](https://github.com/moka-mrp/sword)
 - [中文文档](https://github.com/moka-mrp/sword-core/wiki)
 - [changelog](https://github.com/moka-mrp/sword-core/blob/master/CHANGELOG.md)
-- [xorm](http://gobook.io/read/github.com/go-xorm/manual-zh-CN/)
+
+## Contributors
+
+- Sam
+- Rick
+- Lucifer
+
+
+
+
 `
