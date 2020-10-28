@@ -7,4 +7,4 @@ MAINTAINER Sam <shanbumin@qq.com>
 # COPY
 ADD ./bin/shanbumin.run   .
 # Cmd
-CMD ["./shanbumin.run","run"]`
+CMD ["./shanbumin.run","run","api"]`
