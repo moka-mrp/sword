@@ -8,8 +8,8 @@ import (
 )
 
 var (
-	Version = "1.0.1"
-	BuildTime = "2020/10/16 14:15:16"
+	Version = "1.0.3"
+	BuildTime = "2020/10/28 13:14:33"
 )
 
 type VersionOptions struct {
