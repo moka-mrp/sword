@@ -143,6 +143,9 @@ func Error(c *gin.Context, code int, msg ...string) {
 		message = msg[0]
 	} else {
 		message = constants.CodeText(code)
+        if len(message)<=0{
+			message=http.StatusText(code)
+		}
 	}
 
 	c.JSON(http.StatusOK, gin.H{
