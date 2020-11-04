@@ -24,6 +24,7 @@ var (
 //@todo 需要额外的配置请自己拓展即可
 type Config struct {
 	Env     string                ` + "`toml:\"Env\"`" + `
+	ID     string                ` + "`toml:\"id\"`" + `
 	Debug   bool                  ` + "`toml:\"Debug\"`" + `
 	Log     config.LogConfig       ` + "`toml:\"Log\"`" + `
 	Redis   config.RedisMultiConfig ` + "`toml:\"Redis\"`" + `

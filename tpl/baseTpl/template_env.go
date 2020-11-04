@@ -7,7 +7,7 @@ const  TplEnv = `# toml配置文件
 ### 全局配置信息
 Debug = true
 Env = "local"
-
+ID ="{{.Name}}"
 ###日志配置信息
 [Log]
 Handler = "file"
